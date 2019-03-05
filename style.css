@@ -1,0 +1,553 @@
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.41;
+}
+
+/*-------------------- Header Start --------------------*/
+#header{
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #010611;
+}
+header nav a{
+    display: inline-block;
+    transition: 0.3s;
+}
+
+header nav{
+    display: none;
+}
+header.open nav{
+    display: block;
+}
+
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+    color: #5e7ce2;
+}
+header #logo a{
+    font-size: 1.5em;
+    padding: 20px;
+    padding-left: 15px;
+    color: #5e7ce2;
+    font-weight: bold;
+}
+header #logo {
+    display: inline-block;
+    width: 70%
+}
+header .nav-toggle{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+header li{
+    display:block;
+    float:left;
+    width:153px;
+    padding: 0px 10px 0px;
+    margin-top: 0px
+}
+
+/*-------------------- Header End --------------------*/
+
+
+/*-------------------- Intro Start --------------------*/
+
+#intro{
+    min-height: 500px;
+    background-image:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .3)), url(img/skyline.jpeg);
+    background-size: cover;
+    background-position: 40% 50%;
+    position: relative;
+    background-attachment: fixed;
+}
+.intro-text{
+    position: absolute;
+    top: 175px;
+    text-align: center;
+    left: 0px;
+}
+.intro-text h1{
+    font-size: 1.7em;
+    padding: 10px;
+    font-weight: bold;
+}
+.intro-text h1 span {
+    color: #5e7ce2;
+    font-style: italic;
+}
+.intro-text .call-to-action{
+    width: 60%;
+    margin: auto;
+}
+.intro-text .call-to-action .btn-bg{
+    width: 100%;
+}
+/*-------------------- Intro End --------------------*/
+
+/*-------------------- About Us Start --------------------*/
+
+#about-us{
+    background-color: white;
+    text-align: center;
+}
+
+.service{
+    margin: 15px 0px;
+    text-align: center;
+}
+.service-icon{
+    font-size: 3em;
+    padding: 15px;
+    color: #5e7ce2;
+}
+.service-title{
+    padding: 5px 0px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/*-------------------- About Us End --------------------*/
+/*-------------------- Numbers Start --------------------*/
+
+#numbers{
+    background-color: #142442;
+    color: white;
+}
+
+.fact{
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.fact-icon{
+    padding: 15px;
+    font-size: 1.5em;
+}
+.fact-text{
+    font-style: italic;
+}
+/*-------------------- Numbers End --------------------*/
+
+/*-------------------- Works Start --------------------*/
+
+#works .section-title, 
+#works .title-desc{
+    text-align: center
+}
+.work{
+    margin: 20px 0px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2)
+}
+.work-img{
+    height: 300px;
+    width: 100%;
+}
+
+.work-title{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+/*-------------------- Works End --------------------*/
+
+/*-------------------- Join Us Start --------------------*/
+
+#join-us{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(img/joinus.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+#join-us h5{
+    padding: 30px 10px 0px 10px;
+    font-size: 1.3em;
+}
+
+#join-us h4{
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+
+/*-------------------- Join Us End --------------------*/
+
+
+/*-------------------- Services Start --------------------*/
+
+#services{
+    background-color: white;
+}
+
+/*-------------------- Services End --------------------*/
+
+
+
+/*-------------------- Pricing End --------------------*/
+
+.plan{
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-top: 3px solid #5e7ce2;
+    border-radius: 10px;
+}
+.plan-title{
+    font-size: 2em;
+    color: #5e7ce2;
+    padding: 15px 0px
+}
+.plan-price{
+    font-style: italic;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+.plan li{
+    padding: 5px;
+}
+/*-------------------- Pricing End --------------------*/
+
+
+/*-------------------- Team Start --------------------*/
+
+#team{
+    background-color: white;
+}
+.member{
+    margin: 5px 0px;
+    text-align: center;
+}
+.member-name{
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold
+}
+.member-job{
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 5px 0px;
+}
+.member-word{
+    padding: 5px 0px;
+    padding-bottom: 15px;
+}
+.social-link a{
+    color: #142442;
+    display: inline-block;
+    padding: 12px;
+}
+
+
+/*-------------------- Team End --------------------*/
+
+/*-------------------- Contact Start --------------------*/
+
+form{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0.1);
+    border-top: 3px solid #5e7ce2;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #f4f4f4;
+    transition: all 0.4s;
+}
+form input:hover,
+form inout:focus,
+form textarea:hover,
+form textarea:focus {
+    
+    border: 2px solid #f4f4f4;
+    background-color: white;
+    
+}
+form label{
+    display: block;
+    padding: 5px 0px;
+}
+form textarea{
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+/*-------------------- Contact End --------------------*/
+
+/*-------------------- Footer Start --------------------*/
+
+footer{
+    background-color: #142442;
+    color: white;
+}
+.info{
+    margin: 15px 0px;
+}
+footer a{
+    color: white;
+    display: inline-block;
+    padding: 10px 0px
+}
+footer .info-title{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer p{
+    padding: 10px;
+}
+footer .copyright{
+    text-align: center;
+}
+/*-------------------- Footer End --------------------*/
+
+.go-up{
+    background-color: #142442;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2)
+}
+
+.go-up a{
+    padding: 20px;
+    display: inline-block;
+    color: white;
+}
+
+
+/*-- COMMON CODE START --*/
+/*-- COMMON CODE START --*/
+
+
+ul, li{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+.call-to-action{
+    margin: 20px 0px;
+}
+.btn-bg{
+    text-decoration: none;
+    background-color: #5e7ce2;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    transition: background-color .3s, color .3s;
+    cursor: pointer;
+}
+.btn-bg:hover{
+    background-color: white;
+    color: #5e7ce2;
+}
+.section-title{
+    padding: 15px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+.section-title span{
+    color: #5e7ce2;
+}
+.section-desc{
+    padding: 15px 0px;
+    padding-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+section{
+    padding-bottom: 30px;
+}
+#map{
+    padding-bottom: 0px;
+}
+
+/*-- COMMON CODE END --*/
+/*-- COMMON CODE END --*/
+
+
+/*-- Media Query For Tablet Start --*/
+
+@media screen and (min-width: 700px){
+    header .nav-toggle{
+        display: none;
+    }
+    header nav{
+        display: block;
+    }
+    header nav li{
+        display: inline-block;
+    }
+}
+
+/*-- Media Query For Tablet Start --*/
+
+@media screen and (min-width:700px){
+    header .nav-toggle{
+        display: none;
+    }
+    header nav{
+        display: block;
+    }
+    header nav li{
+        display: inline-block;
+    }
+    .intro-text{
+        top: 200px;
+        width: 70%;
+        left: 15%
+    }
+    .service,
+    .plan,
+    .fact,
+    .work,
+    .member,
+    .info{
+        width: 45.5%;
+        display: inline-block;
+        margin 2%;
+    }
+    .plan:last-child{
+        display: block;
+        margin: auto;
+    }
+    .member-img{
+        height: 250px;
+        overflow: hidden;
+    }
+    #services .service:last-child{
+        display: inline-block;
+        margin: 1%;
+    }
+}
+
+/*-- Media Query For Tablet Start --*/
+
+/*-- Media Query For Laptop Start --*/
+
+@media screen and (min-width:1000px){
+    header #logo{
+        width: 30%;
+        display: inline-block;
+    }
+    header nav{
+        width: 65%;
+        display: inline-block;
+    }
+    #intro{
+        min-height: 600px;
+    }
+    .intro-text{
+        width: 60%;
+        left: 20%;
+    }
+    #intro .call-to-action{
+        max-width: 200px;
+    }
+    .service,
+    .work,
+    .plan,
+    .info{
+        width: 30%;
+        margin: 1%;
+    }
+    #services .service:last-child,
+              .plan:last-child{
+        display: inline-block;
+        margin: 1%;
+    }
+    .fact,
+    .member{
+        width: 22.5%;
+        margin: 1%
+    }
+    .member-img img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    .member-img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #contact form{
+        max-width: 800px;
+        margin: 20px auto
+    }
+
+}
+
+/*-- Media Query For Laptop End --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
